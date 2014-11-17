@@ -1,0 +1,509 @@
+/* ===== Velocity Stylesheet ========================================================================================== */
+/*
+
+Project:    Jeopardy
+Version:    1.0
+Author:     Santiago Murgolo :)
+Author URL: http://makingsense.com
+
+
+-----------------------------------
+    TABLE OF CONTENTS
+-----------------------------------
+00 - Includes/imports.
+01 - Base & Global elements, utils.
+02 - Imports Modules, Section, Login.    
+*/
+/* ==================================================================================================================== */
+/*      00 - Includes/imports.                                                                                          */
+/* ==================================================================================================================== */
+/* line 5, ../../../Ruby200-x64/lib/ruby/gems/2.0.0/gems/compass-core-1.0.0.alpha.21/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* line 22, ../../../Ruby200-x64/lib/ruby/gems/2.0.0/gems/compass-core-1.0.0.alpha.21/stylesheets/compass/reset/_utilities.scss */
+html {
+  line-height: 1;
+}
+
+/* line 24, ../../../Ruby200-x64/lib/ruby/gems/2.0.0/gems/compass-core-1.0.0.alpha.21/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 26, ../../../Ruby200-x64/lib/ruby/gems/2.0.0/gems/compass-core-1.0.0.alpha.21/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 28, ../../../Ruby200-x64/lib/ruby/gems/2.0.0/gems/compass-core-1.0.0.alpha.21/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 30, ../../../Ruby200-x64/lib/ruby/gems/2.0.0/gems/compass-core-1.0.0.alpha.21/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+/* line 103, ../../../Ruby200-x64/lib/ruby/gems/2.0.0/gems/compass-core-1.0.0.alpha.21/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 32, ../../../Ruby200-x64/lib/ruby/gems/2.0.0/gems/compass-core-1.0.0.alpha.21/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 116, ../../../Ruby200-x64/lib/ruby/gems/2.0.0/gems/compass-core-1.0.0.alpha.21/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block;
+}
+
+/* ==================================================================================================================== */
+/*      01 - Global elements                                                                                         */
+/* ==================================================================================================================== */
+/**
+/**
+ *
+ * Define variables for backgrounds,
+ * text colors, etc.
+ *
+
+  Definitions
+  -----------------------
+
+  Orange:        #DD4B39
+  Light Grey:    #EBEBEB
+  Grey:          #999
+  Dark Grey:     #333
+  Whiteish:      #F0F0F0
+
+**/
+/* Cross APP - Defaults */
+/* Backgrounds */
+/* Font families */
+/* Font colors */
+/* Buttons */
+/* Forms */
+/* Modules */
+/**
+
+  # Meetings & Calendar
+
+*/
+/**
+
+  # Quizzes
+
+*/
+/**
+
+  # Tasks
+
+*/
+/* Tasks */
+/**
+
+  # Files and items to complete
+
+*/
+/**
+
+  # Quiz 
+
+**/
+/*
+
+ # Nav Bar
+
+ */
+/*
+
+ # Progress Bar
+
+*/
+/**
+ * 
+ * Define mixins, functions, 
+ * animations, placeholders, 
+ * helper classes.
+ * 
+**/
+/*
+ * Absolute positioning elements.
+ */
+/*
+ * Control animations.
+ */
+/*
+ * Calculate margin, paddings, positioning, width, height.
+ */
+/*
+ * Style placeholders.
+ */
+/* ==================================================================================================================== */
+/*      02 - Imports Modules, Section, Login.                                                                                             */
+/* ==================================================================================================================== */
+/*
+ * Hide from both screenreaders and browsers: h5bp.com/u
+ */
+/* line 7, ../sass/custom/_home.scss */
+.element-hidden {
+  display: none !important;
+  visibility: hidden;
+}
+
+/*
+ * Pull element to the left.
+ */
+/* line 14, ../sass/custom/_home.scss */
+.pull-left {
+  float: left;
+}
+
+/*
+ * Pull element to the right.
+ */
+/* line 22, ../sass/custom/_home.scss */
+.pull-right {
+  float: right;
+}
+
+/*
+ * Clear floats.
+ */
+/* line 30, ../sass/custom/_home.scss */
+.clearfix {
+  zoom: 1;
+}
+/* line 32, ../sass/custom/_home.scss */
+.clearfix:before, .clearfix:after {
+  content: "\0020";
+  display: block;
+  height: 0;
+  overflow: hidden;
+}
+/* line 38, ../sass/custom/_home.scss */
+.clearfix:after {
+  clear: both;
+}
+
+/* line 44, ../sass/custom/_home.scss */
+a,
+a[class^="button-"],
+a[class*="button-"] {
+  text-decoration: none;
+}
+
+/* line 50, ../sass/custom/_home.scss */
+a,
+button {
+  border: none;
+  outline: none;
+  -moz-transition: all 0.15s ease;
+  -webkit-transition: all 0.15s ease;
+  transition: all 0.15s ease;
+}
+
+/* line 57, ../sass/custom/_home.scss */
+input[type="email"],
+input[type="text"],
+input[type="password"],
+textarea {
+  padding: .7rem .9rem;
+  border: none;
+  font-size: 1.5em;
+  font-weight: 300;
+  background: rgba(96, 96, 96, 0.3);
+  color: black;
+  -moz-border-radius: 0.3rem;
+  -webkit-border-radius: 0.3rem;
+  border-radius: 0.3rem;
+}
+/* line 47, ../sass/custom/_helpers.scss */
+input[type="email"].placeholder,
+input[type="text"].placeholder,
+input[type="password"].placeholder,
+textarea.placeholder {
+  color: #606060;
+}
+/* line 48, ../sass/custom/_helpers.scss */
+input[type="email"]:-moz-placeholder,
+input[type="text"]:-moz-placeholder,
+input[type="password"]:-moz-placeholder,
+textarea:-moz-placeholder {
+  color: #606060;
+}
+/* line 49, ../sass/custom/_helpers.scss */
+input[type="email"]::-moz-placeholder,
+input[type="text"]::-moz-placeholder,
+input[type="password"]::-moz-placeholder,
+textarea::-moz-placeholder {
+  color: #606060;
+}
+/* line 50, ../sass/custom/_helpers.scss */
+input[type="email"]:-ms-input-placeholder,
+input[type="text"]:-ms-input-placeholder,
+input[type="password"]:-ms-input-placeholder,
+textarea:-ms-input-placeholder {
+  color: #606060;
+}
+/* line 51, ../sass/custom/_helpers.scss */
+input[type="email"]::-webkit-input-placeholder,
+input[type="text"]::-webkit-input-placeholder,
+input[type="password"]::-webkit-input-placeholder,
+textarea::-webkit-input-placeholder {
+  color: #606060;
+}
+
+/* line 71, ../sass/custom/_home.scss */
+img {
+  margin: 0 auto;
+}
+
+/* line 77, ../sass/custom/_home.scss */
+#ars-module {
+  height: 275px;
+  width: 250px;
+  display: inline-block;
+  position: relative;
+}
+
+/**
+ *
+ * Module name: Audence Response
+ *
+**/
+/* line 16, ../sass/custom/_audience-response.scss */
+.audience-response-module {
+  font-size: 1.5rem;
+  position: relative;
+  height: 100%;
+}
+/* line 21, ../sass/custom/_audience-response.scss */
+.audience-response-module .audience-response-header {
+  border-bottom: 1px solid #c8c9ca;
+  height: 2.875rem;
+  padding-bottom: 0;
+}
+/* line 25, ../sass/custom/_audience-response.scss */
+.audience-response-module .audience-response-header h1 {
+  color: #ff2600;
+  font-size: 1.5rem;
+  font-weight: 300;
+  line-height: 112.5%;
+  margin: 0;
+  text-align: center;
+  padding-bottom: .625rem;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+/* line 39, ../sass/custom/_audience-response.scss */
+.audience-response-module form.input-components {
+  height: -moz-calc(100% - 2.875rem);
+  height: -webkit-calc(100% - 2.875rem);
+  height: calc(100% - 2.875rem);
+}
+/* line 43, ../sass/custom/_audience-response.scss */
+.audience-response-module .audience-response-content {
+  height: -moz-calc(100% - 2.875rem);
+  height: -webkit-calc(100% - 2.875rem);
+  height: calc(100% - 2.875rem);
+  text-align: center;
+  display: block;
+  padding: 25px 10px;
+}
+/* line 49, ../sass/custom/_audience-response.scss */
+.audience-response-module .audience-response-content fieldset {
+  width: 90%;
+}
+/* line 51, ../sass/custom/_audience-response.scss */
+.audience-response-module .audience-response-content fieldset input[type="radio"] + label {
+  text-align: left;
+  font-size: 0.8em;
+}
+/* line 56, ../sass/custom/_audience-response.scss */
+.audience-response-module .audience-response-content fieldset p:first-of-type {
+  display: none;
+}
+/* line 60, ../sass/custom/_audience-response.scss */
+.audience-response-module .audience-response-content fieldset small {
+  display: block;
+  margin-bottom: 20px;
+  text-align: left;
+  color: #424242;
+}
+/* line 65, ../sass/custom/_audience-response.scss */
+.audience-response-module .audience-response-content fieldset small.align-center {
+  text-align: center;
+}
+/* line 70, ../sass/custom/_audience-response.scss */
+.audience-response-module .audience-response-content fieldset .slider,
+.audience-response-module .audience-response-content fieldset .slider-value {
+  float: none;
+  width: 100%;
+}
+/* line 75, ../sass/custom/_audience-response.scss */
+.audience-response-module .audience-response-content fieldset .slider-value {
+  clear: both;
+  color: #929292;
+  font-size: 1.5rem;
+  height: 1.5em;
+  padding-top: 0.5em;
+  text-align: center;
+}
+/* line 85, ../sass/custom/_audience-response.scss */
+.audience-response-module .audience-response-content .text-question {
+  font-size: 1.125rem;
+  color: #929292;
+  margin-bottom: 1rem;
+}
+/* line 91, ../sass/custom/_audience-response.scss */
+.audience-response-module .audience-response-content .list-question-code {
+  width: 240px;
+  margin: 0 auto;
+  display: block;
+  padding: 0 0 20px;
+  list-style-type: none;
+  text-align: center;
+  overflow: hidden;
+}
+/* line 99, ../sass/custom/_audience-response.scss */
+.audience-response-module .audience-response-content .list-question-code li {
+  display: inline-block;
+  margin: 10px;
+  float: left;
+}
+/* line 103, ../sass/custom/_audience-response.scss */
+.audience-response-module .audience-response-content .list-question-code li .btn-circle {
+  width: 100px;
+  height: 100px;
+  display: inline-block;
+  -moz-border-radius: 100px;
+  -webkit-border-radius: 100px;
+  border-radius: 100px;
+  line-height: 100px;
+  border: 2px solid #0096ff;
+  font-size: 2.813rem;
+  text-align: center;
+  color: #0096ff;
+}
+/* line 113, ../sass/custom/_audience-response.scss */
+.audience-response-module .audience-response-content .list-question-code li .btn-circle:hover, .audience-response-module .audience-response-content .list-question-code li .btn-circle:focus {
+  background-color: #0096ff;
+  color: white;
+}
+/* line 122, ../sass/custom/_audience-response.scss */
+.audience-response-module .audience-response-content .img-center {
+  text-align: center;
+  margin: 20px auto;
+  display: block;
+  width: 4rem;
+  height: 4rem;
+}
+/* line 130, ../sass/custom/_audience-response.scss */
+.audience-response-module .audience-response-content .slider-set {
+  width: 90%;
+  margin: 0 auto;
+  font-size: 0.8em;
+  line-height: 1.4em;
+}
+/* line 137, ../sass/custom/_audience-response.scss */
+.audience-response-module .audience-response-content.audience-response-completed {
+  display: table;
+  width: 100%;
+  table-layout: fixed;
+  height: -moz-calc(100% - 2.875rem - 3rem);
+  height: -webkit-calc(100% - 2.875rem - 3rem);
+  height: calc(100% - 2.875rem - 3rem);
+  min-height: 140px;
+}
+/* line 144, ../sass/custom/_audience-response.scss */
+.audience-response-module .audience-response-content.audience-response-completed .audience-response-completed-cell {
+  display: table-cell;
+  vertical-align: middle;
+  width: 100%;
+}
+/* line 149, ../sass/custom/_audience-response.scss */
+.audience-response-module .audience-response-content.audience-response-completed .audience-response-completed-cell small {
+  color: #929292 !important;
+  text-align: center;
+  font-size: 1.125rem;
+}
+/* line 158, ../sass/custom/_audience-response.scss */
+.audience-response-module footer {
+  height: 3rem;
+  line-height: 3rem;
+  width: 100%;
+  text-align: center;
+}
+/* line 166, ../sass/custom/_audience-response.scss */
+.audience-response-module .audience-response-completed-footer .link-ok {
+  color: #0096ff;
+  display: block;
+  font-weight: bold;
+  font-size: .815em;
+}
+/* line 175, ../sass/custom/_audience-response.scss */
+.audience-response-module .audience-response-footer {
+  display: block;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 1px;
+  border-top: 1px solid #c8c9ca;
+  background-color: rgba(255, 255, 255, 0.9);
+}
+/* line 183, ../sass/custom/_audience-response.scss */
+.audience-response-module .audience-response-footer .btn-footer {
+  height: 3rem;
+  display: block;
+  width: 50%;
+  float: left;
+  line-height: 3rem;
+  text-align: center;
+  color: #5394FC;
+  font-size: 18px;
+  border: none;
+}
+/* line 194, ../sass/custom/_audience-response.scss */
+.audience-response-module .audience-response-footer .btn-footer[disabled] {
+  color: #929292;
+}
+/* line 198, ../sass/custom/_audience-response.scss */
+.audience-response-module .audience-response-footer .btn-footer:last-of-type {
+  width: 49%;
+  border-left: 1px solid #c8c9ca;
+  font-weight: bold;
+}
+/* line 207, ../sass/custom/_audience-response.scss */
+.audience-response-module.audience-response-has-footer .audience-response-content {
+  height: -moz-calc(100% - 3rem);
+  height: -webkit-calc(100% - 3rem);
+  height: calc(100% - 3rem);
+  overflow-y: auto;
+}

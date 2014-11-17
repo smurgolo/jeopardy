@@ -1,0 +1,62 @@
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="stylesheets/app.css">    
+  </head>
+  <body>
+    <div class="datagrid">
+      <ul class="header-table">
+        <li id="first"></li>
+        <li id="second"></li>
+        <li id="thrid"></li>
+        <li id="four"></li>
+        <li id="five"></li>
+      </ul>
+    </div>
+    <input type="button" value="Get and parse JSON" class="button" id="button-json" />
+    <p id="results"></p>
+    <div id="ars-module">
+      <section class="module audience-response-module">
+        <header class="module-header audience-response-header">
+          <h1 style="color:#FF2600">Question Code</h1>
+        </header>
+        <form class="input-components">
+          <div class="question-code-content">
+            <ul class="list-question-code" >
+              <li><a href="#" id="first-button" class="btn-circle">A</a></li>
+              <li><a href="#" id="second-button" class="btn-circle">B</a></li>
+              <li><a href="#" id="third-button" class="btn-circle">C</a></li>
+              <li><a href="#" id="four-button" class="btn-circle">D</a></li>
+            </ul>         
+          </div>
+          <div class="audience-response-content" style="display:none">
+              
+          </div>
+          <footer class="audience-response-footer">
+            <button type='button' class="btn-footer cancel-button">Back</button>
+            <button type='button' class="btn-footer back-button" style="display:none">Back</button>
+            <button type='submit' class="btn-footer next-button">Done</button>
+          </footer>
+        </form>        
+    </section>
+    </div>
+
+
+    <script type="text/javascript" src="scripts/jquery-1.11.1.js"></script>
+    <script type="text/javascript">
+    $(document).ready(function() {
+      
+      //after button is clicked we download the data
+      $('#button-json').click(function(){
+
+        //start ajax request
+        $.getJSON( "data.json", function( data ) {
+          var json = $.parseJSON(data);
+            //now json variable contains data in json format
+            //let's display a few items
+            $('#results').html('Title name: ' + json.title + '<br />categories: ' + json.categories);
+        });        
+      });
+    });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,41 @@
+{
+  title: "Great Jeopardy Game!!",
+  logo_url: "",
+  categories: [{
+    id: 1,
+    title: "Sports"
+    questions: [{
+      id: 1,
+      value: 2000,
+      ars_code: ["C", "C", "C", "C"]
+    }, {
+      id: 1,
+      value: 2000,
+      ars_code: ["A", "B", "C", "D"]
+    }]
+  }, {
+    id: 2,
+    title: "Oxford English Dictionary"
+    questions: [{
+      id: 1,
+      value: 2000,
+      ars_code: ["C", "C", "C", "C"]
+    }, {
+      id: 1,
+      value: 2000,
+      ars_code: ["A", "B", "C", "D"]
+    }]
+  }, {
+    id: 3,
+    title: "Category 3"
+    questions: [{
+      id: 1,
+      value: 2000,
+      ars_code: ["C", "C", "C", "C"]
+    }, {
+      id: 1,
+      value: 2000,
+      ars_code: ["A", "B", "C", "D"]
+    }]
+  }]
+}

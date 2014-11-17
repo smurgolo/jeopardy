@@ -1,0 +1,82 @@
+
+$default-red: #FF2600;
+
+/*
+ * Hide from both screenreaders and browsers: h5bp.com/u
+ */
+.element-hidden {
+    display: none !important;
+    visibility: hidden;
+}
+/*
+ * Pull element to the left.
+ */
+.pull-left {
+    float:left
+}
+
+
+/*
+ * Pull element to the right.
+ */
+.pull-right {
+    float:right
+}
+
+
+/*
+ * Clear floats.
+ */
+.clearfix {
+    zoom:1;
+    &:before, &:after {
+        content: "\0020";
+        display: block;
+        height: 0;
+        overflow: hidden; 
+    }
+    &:after {
+        clear: both;
+    }
+}
+
+
+a,
+a[class^="button-"],
+a[class*="button-"] {
+  text-decoration:none
+}
+
+a,
+button {
+  border:none;
+  outline:none;
+  @include single-transition(all, .15s, ease)
+}
+
+input[type="email"],
+input[type="text"],
+input[type="password"],
+textarea {
+  padding:.7rem .9rem; 
+  border:none; 
+  font-size:1.5em; 
+  font-weight:300; 
+  background:$input-background; 
+  color:$text-color-main;
+  @include input-placeholder {color:$input-text-color}
+  @include border-radius(.3rem);
+}
+
+img{
+  margin: 0 auto;
+}
+
+
+
+#ars-module{
+  height: 275px;
+  width: 250px;
+  display:inline-block;
+  position: relative;
+}

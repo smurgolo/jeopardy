@@ -1,0 +1,213 @@
+/**
+ *
+ * Module name: Audence Response
+ *
+**/
+$module-footer-big-height-default: 3rem;
+$default-accent-color: #ff2600;
+$text-color-dark-slate-gray:  #424242;
+$default-grey: #929292;
+$default-cyan: #0096FF;
+$default-white: #FFF;
+$default-black: #000;
+$module-footer-big-height-default: 3rem;
+$background-widget-module:  rgba($default-white, .90);
+
+.audience-response-module{
+  font-size:1.5rem;
+  position: relative;
+  height: 100%;
+
+  .audience-response-header{
+    border-bottom: 1px solid #c8c9ca;
+    height: $module-header-height-default;      
+    padding-bottom: 0;
+    h1 {
+      color:$default-accent-color;
+      font-size:1.5rem;
+      font-weight:300;
+      line-height: 112.5%;
+      margin:0;
+      text-align:center;
+      padding-bottom: .625rem; 
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }
+  }
+
+  form.input-components{
+    @include calc("height", "100% - #{$module-header-height-default}");
+  }
+
+  .audience-response-content{
+    @include calc("height", "100% - #{$module-header-height-default}");
+    text-align: center;
+    display: block;
+    padding: 25px 10px;
+
+    fieldset{
+      width: 90%;
+      input[type="radio"] + label{
+        text-align: left;
+        font-size: 0.8em;
+      }
+
+      p:first-of-type {
+        display: none;
+      }
+
+      small {
+        display: block;
+        margin-bottom: 20px;
+        text-align: left;
+        color: $text-color-dark-slate-gray;
+        &.align-center {
+          text-align: center;
+        }
+      }
+
+      .slider,
+      .slider-value {
+        float: none;
+        width: 100%;
+      }
+      .slider-value {
+        clear:both;
+        color:$default-grey;
+        font-size: 1.5rem;
+        height:1.5em;
+        padding-top:0.5em;
+        text-align:center;
+      }
+    }
+
+    .text-question{
+      font-size: 1.125rem;
+      color: $default-grey;
+      margin-bottom: 1rem;
+    }
+
+    .list-question-code{
+      width: 240px;
+      margin: 0 auto;
+      display: block;
+      padding: 0 0 20px;
+      list-style-type: none;
+      text-align: center;
+      overflow: hidden;
+      li{
+        display: inline-block;
+        margin: 10px;
+        float: left;
+        .btn-circle{
+          width: 100px;
+          height: 100px;
+          display: inline-block;
+          @include border-radius(100px);
+          line-height: 100px;
+          border:2px solid $default-cyan;
+          font-size: 2.813rem;
+          text-align: center;
+          color: $default-cyan;
+          &:hover,
+          &:focus{
+            background-color:$default-cyan;
+            color: $default-white;
+          }
+        }
+      }
+    }
+    
+    .img-center{
+      text-align: center;
+      margin: 20px auto;
+      display: block;
+      width:4rem;
+      height:4rem;
+    }
+
+    .slider-set {
+      width: 90%;
+      margin:0 auto;
+      font-size:0.8em;
+      line-height:1.4em;
+    }
+
+    &.audience-response-completed {
+      display:table;
+      width:100%;
+      table-layout: fixed;
+      @include calc("height", "100% - #{$module-header-height-default} - #{$module-footer-big-height-default}");
+      min-height: 140px;
+
+      .audience-response-completed-cell{
+        display: table-cell;
+        vertical-align:middle;
+        width:100%;
+
+        small{
+          color: $default-grey !important;
+          text-align: center;
+          font-size: 1.125rem;
+        }
+      }
+    }
+  }
+
+  footer{
+    height:$module-footer-big-height-default;
+    line-height: $module-footer-big-height-default;
+    width:100%;
+    text-align:center;
+  }
+
+  .audience-response-completed-footer{
+    .link-ok{
+      color: $default-cyan;
+      display: block;        
+      font-weight: bold;
+      font-size: .815em;
+    }
+  }
+
+
+  .audience-response-footer{
+    display: block;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 1px;
+    border-top:1px solid #c8c9ca;
+    background-color: $background-widget-module;
+    .btn-footer{
+      height:$module-footer-big-height-default;
+      display: block;
+      width: 50%;
+      float: left;
+      line-height: $module-footer-big-height-default;
+      text-align: center;
+      color: #5394FC;
+      font-size: 18px;
+      border:none;
+
+      &[disabled]{
+        color: $default-grey;          
+      }
+
+      &:last-of-type {
+        width: 49%;
+        border-left: 1px solid #c8c9ca;
+        font-weight: bold;
+      }
+    }
+  }
+
+  &.audience-response-has-footer{
+    .audience-response-content{
+      @include calc("height", "100% - #{$module-footer-big-height-default}");
+      overflow-y: auto;
+    }
+  } 
+
+}

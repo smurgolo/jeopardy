@@ -1,0 +1,159 @@
+/**
+/**
+ *
+ * Define variables for backgrounds,
+ * text colors, etc.
+ *
+
+  Definitions
+  -----------------------
+
+  Orange:        #DD4B39
+  Light Grey:    #EBEBEB
+  Grey:          #999
+  Dark Grey:     #333
+  Whiteish:      #F0F0F0
+
+**/
+
+/* Cross APP - Defaults */
+$default-black:             #000;
+$default-blue:              #0097FF;
+$default-cyan:              #0096FF;
+$default-cyan-meeting-link: #0175C7;
+$default-green:             #59B62E;
+$default-light-grey:        #EBEBEB;
+$default-grey-text-notification: #d3d3d3;
+$default-dark-grey:              #797979;
+$default-grey:              #929292;
+$default-orange:            #FF9400;
+$default-red:               #FF2600;
+$default-white:             #FFF;
+
+$default-accent-color:      #ff2600;
+$default-link-color:        #0096ff;
+/* Backgrounds */
+$background-sidebars:       #000;
+$background-widget-module:  rgba($default-white, .90);
+
+$background-widget-file-module:   rgba($default-white, .75);
+$background-items-complete-gray:    #909090;
+$background-items-complete-green:   #72D863;
+$background-items-complete-footer:  #F3F3F3;
+
+/* Font families */
+$font-family-stack:         "Helvetica Neue", Helvetica, Arial, sans-serif;
+
+$font-size-base: 16px;
+
+
+/* Font colors */
+$text-color-main:             #000;
+$text-color-white:            #FFF;
+$text-color-dark-slate-gray:  #424242;
+$text-color-light-slate-gray: #929292;
+
+/* Buttons */
+$button-tag_bg:         #1A7AFC;
+$button-tag_color:        #76D6FF;
+
+
+/* Forms */
+$input-default:         #606060;
+$input-background:        rgba($input-default, .3);
+$input-text-color:        $input-default;
+$input-height:          42px;
+
+/* Modules */
+$separator-color: #c8c9ca;
+$module-header-height-default: 2.875rem;
+$module-footer-height-default: 2rem;
+$module-footer-big-height-default: 3rem;
+
+/**
+
+  # Meetings & Calendar
+
+*/
+$calendar-day-separator-color: #C0C0C0;
+$calendar-hour-separator-color: #C0C0C0;
+$meeting-type-productinfo:    #0095FF;
+$meeting-type-sales:      #008E00;
+$meeting-type-resanddev:    #FF9200;
+
+$meeting-text-productinfo:    darken($meeting-type-productinfo, 15%);
+$meeting-text-sales:      darken($meeting-type-sales, 15%);
+$meeting-text-resanddev:    darken($meeting-type-resanddev, 15%);
+
+$meeting-day-selected:      $default-dark-grey;
+$meeting-day-current:       $default-accent-color;
+
+
+/**
+
+  # Quizzes
+
+*/ 
+$quizz-header-height: 73px;
+$quizz-footer-height: 44px;
+
+
+/**
+
+  # Tasks
+
+*/
+
+$meeting-type-productinfo:    #0095FF;
+$meeting-type-sales:      #008E00;
+$meeting-type-resanddev:    #FF9200;
+$meeting-text-productinfo:  darken($meeting-type-productinfo, 15%);
+$meeting-text-sales:        darken($meeting-type-sales, 15%);
+
+$meeting-text-productinfo:    darken($meeting-type-productinfo, 15%);
+$meeting-text-sales:      darken($meeting-type-sales, 15%);
+$meeting-text-resanddev:    darken($meeting-type-resanddev, 15%);
+$meeting-day-selected:      $default-dark-grey;
+$meeting-day-current:       $default-accent-color;
+$separator-color:           #c8c9ca;
+
+/* Tasks */
+$task-tostart:          $default-accent-color;
+$task-started:          lighten($task-tostart, 30%);
+$task-finished:         #929292;
+
+/**
+
+  # Files and items to complete
+
+*/
+
+$file-expiration-text-color:    #FCA341;
+
+
+/**
+
+  # Quiz 
+
+**/
+$quiz-line-header: $default-dark-grey;
+$quiz-slider-summary-description: $default-dark-grey;
+$slider-summaries-default-grey: #d6d6d6;
+$quiz-container-offset: 69px;
+
+/*
+
+ # Nav Bar
+
+ */
+
+$header-height:4.0625rem;
+$header-height-browser: 3rem;
+$header-and-content-separation: 2px;
+/*
+
+ # Progress Bar
+
+*/
+$background-progress-bar-component: #c1c1c1;
+$background-progress-bar-indicator: #197afc;

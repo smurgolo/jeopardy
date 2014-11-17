@@ -1,0 +1,53 @@
+/**
+ * 
+ * Define mixins, functions, 
+ * animations, placeholders, 
+ * helper classes.
+ * 
+**/
+
+/*
+ * Absolute positioning elements.
+ */
+@mixin abs-position($z-index) {
+    position:absolute;
+    z-index:$z-index;
+}
+
+
+/*
+ * Control animations.
+ */
+@mixin animate($name, $duration, $ease, $repeat) {
+    -webkit-animation:$name $duration $ease $repeat;
+    -webkit-animation-fill-mode:both;
+    -moz-animation:$name $duration $ease $repeat;
+    -moz-animation-fill-mode:both;
+    -o-animation:$name $duration $ease $repeat;
+    -o-animation-fill-mode:both;
+    animation:$name $duration $ease $repeat;
+    animation-fill-mode:both;
+}
+
+
+/*
+ * Calculate margin, paddings, positioning, width, height.
+ */
+@mixin calc($property, $expression) {
+    #{$property}: -moz-calc(#{$expression});
+    #{$property}: -webkit-calc(#{$expression});
+    #{$property}: calc(#{$expression});
+}
+
+
+/*
+ * Style placeholders.
+ */
+@mixin input-placeholder {
+    &.placeholder { @content; }
+    &:-moz-placeholder { @content; }
+    &::-moz-placeholder { @content; }
+    &:-ms-input-placeholder { @content; }
+    &::-webkit-input-placeholder { @content; } 
+}
+
